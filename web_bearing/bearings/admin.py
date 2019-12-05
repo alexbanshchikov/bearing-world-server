@@ -1,0 +1,22 @@
+from django.contrib import admin
+
+from .models import ArticulatedBearingTypeDetails, BallRadialAndBallRollerBearingTypeDetails, \
+    BallAngularContactBearingTypeDetails, BallPersistentAndPersistentRadialBearingTypeDetails, \
+    BallRadialSphericalBearingTypeDetails, Bearing, BearingInnerType, BearingOuterType, \
+    RadialNeedleRollerWithLongCylindricalRollersBearingType, RollerConicBearingTypeDetails, \
+    RollerPersistentAndPersistentRadialBearingTypeDetails, ShortCylindricalRollerBearingTypeDetails, \
+    SphericalRollerBearingsAndAngularContactSphericalBearing
+
+admin.site.register(ArticulatedBearingTypeDetails)
+admin.site.register(BallRadialAndBallRollerBearingTypeDetails)
+admin.site.register(BallAngularContactBearingTypeDetails)
+admin.site.register(BallPersistentAndPersistentRadialBearingTypeDetails)
+admin.site.register(BallRadialSphericalBearingTypeDetails)
+admin.site.register(Bearing)
+admin.site.register(BearingInnerType)
+admin.site.register(BearingOuterType)
+admin.site.register(RadialNeedleRollerWithLongCylindricalRollersBearingType)
+admin.site.register(RollerConicBearingTypeDetails)
+admin.site.register(RollerPersistentAndPersistentRadialBearingTypeDetails)
+admin.site.register(ShortCylindricalRollerBearingTypeDetails)
+admin.site.register(SphericalRollerBearingsAndAngularContactSphericalBearing)
