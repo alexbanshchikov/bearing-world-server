@@ -17,66 +17,66 @@ from .serializers import ArticulatedBearingTypeDetailsSerializer, BallRadialAndB
     SphericalRollerBearingsAndAngularContactSphericalBearingSerializer
 
 
-class ArticulatedBearingTypeDetailsSet(viewsets.ModelViewSet):
+class ArticulatedBearingTypeDetailsViewSet(viewsets.ModelViewSet):
     serializer_class    = ArticulatedBearingTypeDetailsSerializer
     queryset            = ArticulatedBearingTypeDetails.objects.all()
 
 
-class BallRadialAndBallRollerBearingTypeDetailsSet(viewsets.ModelViewSet):
+class BallRadialAndBallRollerBearingTypeDetailsViewSet(viewsets.ModelViewSet):
     serializer_class    = BallRadialAndBallRollerBearingTypeDetailsSerializer
     queryset            = BallRadialAndBallRollerBearingTypeDetails.objects.all()
 
 
-class BallAngularContactBearingTypeDetailsSet(viewsets.ModelViewSet):
+class BallAngularContactBearingTypeDetailsViewSet(viewsets.ModelViewSet):
     serializer_class    = BallAngularContactBearingTypeDetailsSerializer
     queryset            = BallAngularContactBearingTypeDetails.objects.all()
 
 
-class BallPersistentAndPersistentRadialBearingTypeDetailsSet(viewsets.ModelViewSet):
+class BallPersistentAndPersistentRadialBearingTypeDetailsViewSet(viewsets.ModelViewSet):
     serializer_class    = BallPersistentAndPersistentRadialBearingTypeDetailsSerializer
     queryset            = BallPersistentAndPersistentRadialBearingTypeDetails.objects.all()
 
 
-class BearingSet(viewsets.ModelViewSet):
+class BearingViewSet(viewsets.ModelViewSet):
     serializer_class    = BearingSerializer
     queryset            = Bearing.objects.all()
 
 
-class BallRadialSphericalBearingTypeDetailsSet(viewsets.ModelViewSet):
+class BallRadialSphericalBearingTypeDetailsViewSet(viewsets.ModelViewSet):
     serializer_class    = BallRadialSphericalBearingTypeDetailsSerializer
     queryset            = BallRadialSphericalBearingTypeDetails.objects.all()
 
 
-class BearingInnerTypeSet(viewsets.ModelViewSet):
+class BearingInnerTypeViewSet(viewsets.ModelViewSet):
     serializer_class    = BearingInnerTypeSerializer
     queryset            = BearingInnerType.objects.all()
 
 
-class BearingOuterTypeSet(viewsets.ModelViewSet):
+class BearingOuterTypeViewSet(viewsets.ModelViewSet):
     serializer_class    = BearingOuterTypeSerializer
     queryset            = BearingOuterType.objects.all()
 
 
-class RadialNeedleRollerWithLongCylindricalRollersBearingTypeSet(viewsets.ModelViewSet):
+class RadialNeedleRollerWithLongCylindricalRollersBearingTypeViewSet(viewsets.ModelViewSet):
     serializer_class    = RadialNeedleRollerWithLongCylindricalRollersBearingTypeSerializer
     queryset            = RadialNeedleRollerWithLongCylindricalRollersBearingType.objects.all()
 
 
-class RollerConicBearingTypeDetailsSet(viewsets.ModelViewSet):
+class RollerConicBearingTypeDetailsViewSet(viewsets.ModelViewSet):
     serializer_class    = RollerConicBearingTypeDetailsSerializer
     queryset            = RollerConicBearingTypeDetails.objects.all()
 
 
-class RollerPersistentAndPersistentRadialBearingTypeDetailsSet(viewsets.ModelViewSet):
+class RollerPersistentAndPersistentRadialBearingTypeDetailsViewSet(viewsets.ModelViewSet):
     serializer_class    = RollerPersistentAndPersistentRadialBearingTypeDetailsSerializer
     queryset            = RollerPersistentAndPersistentRadialBearingTypeDetails.objects.all()
 
 
-class ShortCylindricalRollerBearingTypeDetailsSet(viewsets.ModelViewSet):
+class ShortCylindricalRollerBearingTypeDetailsViewSet(viewsets.ModelViewSet):
     serializer_class    = ShortCylindricalRollerBearingTypeDetailsSerializer
     queryset            = ShortCylindricalRollerBearingTypeDetails.objects.all()
 
 
-class SphericalRollerBearingsAndAngularContactSphericalBearingSet(viewsets.ModelViewSet):
+class SphericalRollerBearingsAndAngularContactSphericalBearingViewSet(viewsets.ModelViewSet):
     serializer_class    = SphericalRollerBearingsAndAngularContactSphericalBearingSerializer
     queryset            = SphericalRollerBearingsAndAngularContactSphericalBearing.objects.all()

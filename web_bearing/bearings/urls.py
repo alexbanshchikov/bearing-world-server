@@ -1,26 +1,26 @@
-from rest_framework.routers import  DefaultRouter
+from rest_framework.routers import DefaultRouter
 
-from .views import ArticulatedBearingTypeDetailsSet, BallRadialAndBallRollerBearingTypeDetailsSet, \
-    BallAngularContactBearingTypeDetailsSet, BallPersistentAndPersistentRadialBearingTypeDetailsSet, \
-    BallRadialSphericalBearingTypeDetailsSet, BearingSet, BearingInnerTypeSet, BearingOuterTypeSet, \
-    RadialNeedleRollerWithLongCylindricalRollersBearingTypeSet, RollerConicBearingTypeDetailsSet, \
-    RollerPersistentAndPersistentRadialBearingTypeDetailsSet, ShortCylindricalRollerBearingTypeDetailsSet, \
-    SphericalRollerBearingsAndAngularContactSphericalBearingSet
+from .views import ArticulatedBearingTypeDetailsViewSet, BallRadialAndBallRollerBearingTypeDetailsViewSet, \
+    BallAngularContactBearingTypeDetailsViewSet, BallPersistentAndPersistentRadialBearingTypeDetailsViewSet, \
+    BallRadialSphericalBearingTypeDetailsViewSet, BearingViewSet, BearingInnerTypeViewSet, BearingOuterTypeViewSet, \
+    RadialNeedleRollerWithLongCylindricalRollersBearingTypeViewSet, RollerConicBearingTypeDetailsViewSet, \
+    RollerPersistentAndPersistentRadialBearingTypeDetailsViewSet, ShortCylindricalRollerBearingTypeDetailsViewSet, \
+    SphericalRollerBearingsAndAngularContactSphericalBearingViewSet
 
 router = DefaultRouter()
 
-router.register(r'bearings/ArticulatedBearingTypeDetails', ArticulatedBearingTypeDetailsSet)
-router.register(r'bearings/BallRadialAndBallRollerBearingTypeDetails', BallRadialAndBallRollerBearingTypeDetailsSet)
-router.register(r'bearings/BallAngularContactBearingTypeDetails', BallAngularContactBearingTypeDetailsSet)
-router.register(r'bearings/BallPersistentAndPersistentRadialBearingTypeDetails', BallPersistentAndPersistentRadialBearingTypeDetailsSet)
-router.register(r'bearings/BallRadialSphericalBearingTypeDetails', BallRadialSphericalBearingTypeDetailsSet)
-router.register(r'bearings/Bearing', BearingSet)
-router.register(r'bearings/BearingInnerType', BearingInnerTypeSet)
-router.register(r'bearings/BearingOuterType', BearingOuterTypeSet)
-router.register(r'bearings/RadialNeedleRollerWithLongCylindricalRollersBearingType', RadialNeedleRollerWithLongCylindricalRollersBearingTypeSet)
-router.register(r'bearings/RollerConicBearingTypeDetails', RollerConicBearingTypeDetailsSet)
-router.register(r'bearings/RollerPersistentAndPersistentRadialBearingTypeDetails', RollerPersistentAndPersistentRadialBearingTypeDetailsSet)
-router.register(r'bearings/ShortCylindricalRollerBearingTypeDetails', ShortCylindricalRollerBearingTypeDetailsSet)
-router.register(r'bearings/SphericalRollerBearingsAndAngularContactSphericalBearing', SphericalRollerBearingsAndAngularContactSphericalBearingSet)
+router.register(r'bearings/ArticulatedBearingTypeDetails', ArticulatedBearingTypeDetailsViewSet)
+router.register(r'bearings/BallRadialAndBallRollerBearingTypeDetails', BallRadialAndBallRollerBearingTypeDetailsViewSet)
+router.register(r'bearings/BallAngularContactBearingTypeDetails', BallAngularContactBearingTypeDetailsViewSet)
+router.register(r'bearings/BallPersistentAndPersistentRadialBearingTypeDetails', BallPersistentAndPersistentRadialBearingTypeDetailsViewSet)
+router.register(r'bearings/BallRadialSphericalBearingTypeDetails', BallRadialSphericalBearingTypeDetailsViewSet)
+router.register(r'bearings/Bearing', BearingViewSet)
+router.register(r'bearings/BearingInnerType', BearingInnerTypeViewSet)
+router.register(r'bearings/BearingOuterType', BearingOuterTypeViewSet)
+router.register(r'bearings/RadialNeedleRollerWithLongCylindricalRollersBearingType', RadialNeedleRollerWithLongCylindricalRollersBearingTypeViewSet)
+router.register(r'bearings/RollerConicBearingTypeDetails', RollerConicBearingTypeDetailsViewSet)
+router.register(r'bearings/RollerPersistentAndPersistentRadialBearingTypeDetails', RollerPersistentAndPersistentRadialBearingTypeDetailsViewSet)
+router.register(r'bearings/ShortCylindricalRollerBearingTypeDetails', ShortCylindricalRollerBearingTypeDetailsViewSet)
+router.register(r'bearings/SphericalRollerBearingsAndAngularContactSphericalBearing', SphericalRollerBearingsAndAngularContactSphericalBearingViewSet)
 
 urlpatterns = router.urls
